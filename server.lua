@@ -1,5 +1,5 @@
 --[[ Remove after 60 seconds ]]
-delay = 60000
+delay = 60
 color = '~r~'
 
 syncTable = {}
