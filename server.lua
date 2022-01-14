@@ -16,7 +16,8 @@ AddEventHandler('playerDropped', function(reason)
     syncTable[count] = args,
     TriggerClientEvent('DisconnectSync', -1, syncTable)
     Citizen.Wait(delay * 1000)
-    syncTable[count] = nil
+    syncTable = {}
+    syncTable[count] = {}
     TriggerClientEvent('DisconnectSync', -1, syncTable)
 end)
 
